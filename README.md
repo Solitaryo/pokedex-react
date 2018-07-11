@@ -2,6 +2,11 @@
 
 > The idea of this project is to use the [pokeapi](https://pokeapi.co/), a nice API that returns a list of Pokemons with LOTS of information about it, display them and show the custom info per Pokemon.
 
+### To open the project, run this commands:
+`yarn install`
+
+`yarn start`
+
 ### Technolgies used in this project:
 * React
 * Redux
