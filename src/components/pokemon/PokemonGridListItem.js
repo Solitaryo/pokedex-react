@@ -5,10 +5,10 @@ import GridListTileBar from '@material-ui/core/GridListTileBar';
 import IconButton from '@material-ui/core/IconButton';
 import InfoIcon from '@material-ui/icons/Info';
 
-import { GetPokemonNumber } from '../../utils/StringUtils';
+import { GetPokemonNumber, ToTitleCase } from '../../utils/StringUtils';
 
 const PokemonGridListItem = (props) => (
-  <GridListTile>
+  <GridListTile style={{ height: 250, width: 250 }}>
     <img
       src={
         GetPokemonNumber(props.url) !== null ?
@@ -18,7 +18,7 @@ const PokemonGridListItem = (props) => (
       }
       alt={props.name} />
     <GridListTileBar
-      title={props.name}
+      title={ToTitleCase(props.name)}
       actionIcon={
         <IconButton href={`/pokemon/${GetPokemonNumber(props.url)}`}>
           <InfoIcon />

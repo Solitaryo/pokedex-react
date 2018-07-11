@@ -16,7 +16,7 @@ class PokemonGridList extends React.Component {
   render() {
     const { results } = this.props;
     return (
-      <GridList cellHeight={180} style={{ width: '100%', height: 450 }}>
+      <GridList cellHeight={180} style={{ width: 500, height: '100%' }}>
         <GridListTile key="Subheader" cols={2} style={{ height: 'auto' }}>
           <ListSubheader component="div">Pokemon List</ListSubheader>
         </GridListTile>

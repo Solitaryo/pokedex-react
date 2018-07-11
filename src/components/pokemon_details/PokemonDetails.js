@@ -14,7 +14,7 @@ class PokemonDetails extends React.Component {
     const { match, pokemonDetails } = this.props;
     return (
       <div>
-        <h1> Pokemon number {match.params.pokemonId} </h1>
+        <h1 style={{ marginTop: 20 }}> Pokemon number {match.params.pokemonId} </h1>
         <Pokedex
           number={match.params.pokemonId}
           name={pokemonDetails.name}

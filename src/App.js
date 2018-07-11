@@ -13,7 +13,7 @@ class App extends Component {
       <Router history={History}>
         <div className="App">
           <Header />
-          <div>
+          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
             <Route exact path={'/'} component={PokemonGridList} />
             <Route path={'/pokemon/:pokemonId'} component={PokemonDetails} />
           </div>
