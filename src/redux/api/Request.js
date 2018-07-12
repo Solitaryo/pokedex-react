@@ -10,13 +10,10 @@ class Request {
   ) {
     const customHeaders = headers ||
       {
-        'Accept': 'application/json',
-        'content-type': 'application/json',
-        'Connection': 'keep-alive',
-        'Access-Control-Allow-Origin': '*'
+        'Content-Type': 'application/x-www-form-urlencoded'
       }
     return fetch(`${ApiConstants.BASE_URL}${url}/`, {
-      method: 'GET',
+      method: method,
       headers: customHeaders
     })
   }

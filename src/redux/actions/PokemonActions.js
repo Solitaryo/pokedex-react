@@ -10,7 +10,7 @@ export function getPokemons() {
       })
       .catch(err => {
         dispatch({ type: GET_POKEMON_ERROR, data: err });
-        throw new Error(err);
+        // throw new Error(err);
       })
   }
 }
